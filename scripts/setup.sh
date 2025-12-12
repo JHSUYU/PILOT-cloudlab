@@ -1,3 +1,4 @@
+sudo apt-get update
 sudo apt-get install -y git maven ant vim openjdk-8-jdk
 ant ivy-bootstrap
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
