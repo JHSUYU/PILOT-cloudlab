@@ -27,7 +27,7 @@ pc.defineParameter("nodeCount", "Number of Nodes", portal.ParameterType.INTEGER,
                    longDescription="If you specify more then one node, " +
                                    "we will create a lan for you.")
 
-imageList = [('urn:publicid:IDN+utah.cloudlab.us+image+silentfailure-PG0:PILOTimage-cloudlab', 'Ubuntu 22.04')]
+imageList = [('urn:publicid:IDN+utah.cloudlab.us+image+silentfailure-PG0:PILOTimage-cloudlab:0', 'PILOT Image (Default)')]
 
 pc.defineParameter("osImage", "Select OS image",
                    portal.ParameterType.IMAGE,
