@@ -27,21 +27,11 @@ pc.defineParameter("nodeCount", "Number of Nodes", portal.ParameterType.INTEGER,
                    longDescription="If you specify more then one node, " +
                                    "we will create a lan for you.")
 
-imageList = [
-    ('default', 'Default Image'),
-    ('urn:publicid:IDN+emulab.net+image+emulab-ops//UBUNTU24-64-STD', 'Ubuntu 24.04'),
-    ('urn:publicid:IDN+emulab.net+image+emulab-ops//UBUNTU22-64-STD', 'Ubuntu 22.04'),
-    ('urn:publicid:IDN+emulab.net+image+emulab-ops//UBUNTU20-64-STD', 'Ubuntu 20.04'),
-    ('urn:publicid:IDN+emulab.net+image+emulab-ops//UBUNTU18-64-STD', 'Ubuntu 18.04'),
-    ('urn:publicid:IDN+emulab.net+image+emulab-ops//CENTOS9S-64-STD', 'CentOS 9 Stream'),
-    ('urn:publicid:IDN+emulab.net+image+emulab-ops//CENTOS8S-64-STD', 'CentOS 8 Stream'),
-    ('urn:publicid:IDN+emulab.net+image+emulab-ops//ROCKY9-64-STD', 'Rocky Linux 9'),
-    ('urn:publicid:IDN+emulab.net+image+emulab-ops//FBSD135-64-STD', 'FreeBSD 13.5'),
-    ('urn:publicid:IDN+emulab.net+image+emulab-ops//FBSD142-64-STD', 'FreeBSD 14.2')]
+imageList = [('urn:publicid:IDN+utah.cloudlab.us+image+silentfailure-PG0:PILOTimage-cloudlab', 'Ubuntu 22.04')]
 
 pc.defineParameter("osImage", "Select OS image",
                    portal.ParameterType.IMAGE,
-                   imageList[2], imageList,
+                   imageList[0], imageList,
                    longDescription="Most clusters have this set of images, " +
                                    "pick your favorite one.")
 
